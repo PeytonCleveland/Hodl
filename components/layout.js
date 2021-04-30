@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
         <div>{children}</div>
       </div>
       {/* Aligned to the bottom */}
-      <footer>Footer</footer>
+      <Footer />
     </div>
   );
 };
