@@ -1,3 +1,4 @@
+import Link from "next/link";
 const SignIn = () => {
   return (
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary py-12 px-4 sm:px-6 lg:px-8">
@@ -77,9 +78,11 @@ const SignIn = () => {
             </div>
 
             <div class="text-sm">
-              <a href="#" class="font-medium text-primary hover:text-green-400">
-                Forgot your password?
-              </a>
+              <Link href="/Forgot-password">
+                <p className="font-medium text-primary hover:text-green-400 cursor-pointer">
+                  Forgot your password?
+                </p>
+              </Link>
             </div>
           </div>
 
