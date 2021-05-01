@@ -42,9 +42,11 @@ const Header = () => {
         </svg>
       </button>
       <div className="hidden lg:block">
-        <button className="text-gray-200 text-base px-12 py-2 font-extrabold uppercase tracking-wide bg-gradient-to-br hover:text-green-400 transform duration-300 hover:scale-105">
-          SIGN IN
-        </button>
+        <Link href="/Sign-in">
+          <button className="text-gray-200 text-base px-12 py-2 font-extrabold uppercase tracking-wide bg-gradient-to-br hover:text-green-400 transform duration-300 hover:scale-105">
+            SIGN IN
+          </button>
+        </Link>
         <Link href="/Sign-up">
           <button className="bg-gradient-to-br from-gray-800 to-gray-900 text-gray-200 text-base px-10 py-2.5 ml-4 font-extrabold tracking-wider transform duration-300 hover:scale-103 uppercase hover:from-gray-800 hover:to-gray-800 shadow-xl">
             Sign up
