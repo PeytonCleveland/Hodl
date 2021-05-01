@@ -1,16 +1,18 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
   return (
     <div className="flex flex-col justify-between min-h-screen w-screen">
       {/* Aligned to the top */}
       <div className="flex-1">
-        <Header />
+        {router.pathname !== "/Sign-in" && <Header />}
         <div>{children}</div>
       </div>
       {/* Aligned to the bottom */}
-      <Footer />
+      {router.pathname !== "/Sign-in" && <Footer />}
     </div>
   );
 };
