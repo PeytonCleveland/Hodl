@@ -16,7 +16,8 @@ const Layout = ({ children }) => {
       {/* Aligned to the bottom */}
       {router.pathname !== "/Sign-in" &&
         router.pathname !== "/Forgot-password" &&
-        router.pathname !== "/Sign-up" && <Footer />}
+        router.pathname !== "/Sign-up" &&
+        router.pathname !== "/App/Dashboard" && <Footer />}
     </div>
   );
 };
