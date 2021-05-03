@@ -1,5 +1,5 @@
 import Link from "next/link";
-const SignIn = () => {
+const SignUp = () => {
   return (
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary py-12 px-4 sm:px-6 lg:px-8">
       <div
@@ -16,13 +16,13 @@ const SignIn = () => {
       <div class="max-w-md flex flex-col items-center w-full space-y-8 z-30">
         <div>
           <h2 class="text-center text-2xl md:text-4xl font-extrabold text-gray-200">
-            Sign in to your account
+            Create your account
           </h2>
           <p class="mt-2 text-center text-sm text-gray-400">
             Or{" "}
-            <Link href="/Sign-up">
+            <Link href="/Sign-in">
               <span className="font-medium text-green-400 hover:text-green-500 cursor-pointer">
-                create your account
+                sign in to your account
               </span>
             </Link>
           </p>
@@ -66,34 +66,12 @@ const SignIn = () => {
             </div>
           </div>
 
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <input
-                id="remember_me"
-                name="remember_me"
-                type="checkbox"
-                className="h-4 w-4 text-green-400 form-checkbox focus:ring-indigo-500 border-gray-300"
-              />
-              <label for="remember_me" class="ml-2 block text-sm text-gray-300">
-                Remember me
-              </label>
-            </div>
-
-            <div class="text-sm">
-              <Link href="/Forgot-password">
-                <p className="font-medium text-primary hover:text-green-400 cursor-pointer">
-                  Forgot your password?
-                </p>
-              </Link>
-            </div>
-          </div>
-
           <div>
             <button
               type="submit"
               class="group relative w-full flex justify-center py-2 px-4 border border-transparent transform duration-300 hover:scale-103 text-lg font-extrabold text-gray-900 bg-gradient-to-br from-green-400 to-green-500 hover:from-green-500 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Sign in
+              Create account
             </button>
           </div>
           <div className="flex flex-row w-full justify-center items-center">
@@ -138,4 +116,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
