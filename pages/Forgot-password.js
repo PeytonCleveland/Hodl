@@ -53,25 +53,27 @@ const Forgot = () => {
             </button>
           </div>
         </form>
-        <Link href="/Sign-in">
-          <p className="cursor-pointer w-full font-extrabold text-gray-200 flex flex-row hover:text-green-400">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            BACK
-          </p>
-        </Link>
+        <div className="w-full">
+          <Link href="/Sign-in">
+            <p className="cursor-pointer w-min font-extrabold text-gray-200 flex flex-row hover:text-green-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              BACK
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );

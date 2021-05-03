@@ -26,7 +26,7 @@ const SignIn = () => {
           </p>
         </div>
         <form
-          className="mt-8 space-y-6 bg-gradient-to-br from-gray-800 to-gray-900 px-5 md:px-12 py-10 shadow-lg z-30"
+          className="mt-8 space-y-6 bg-gradient-to-br w-full from-gray-800 to-gray-900 px-5 md:px-10 py-10 shadow-lg z-30"
           action="#"
           method="POST"
         >
@@ -102,14 +102,35 @@ const SignIn = () => {
             <hr className="w-20 md:w-24 border-gray-500" />
           </div>
           <div className="grid grid-cols-2 gap-8 w-full">
-            <div className="flex justify-center items-center rounded-full py-1.5 bg-gray-200">
+            <div className="flex justify-center items-center rounded-full py-1.5 cursor-pointer bg-gray-200 transform duration-300 hover:scale-103 hover:bg-gray-100">
               <img src="/google.svg" className="h-6" />
             </div>
-            <div className="flex justify-center items-center rounded-full py-1.5 bg-gray-200">
+            <div className="flex justify-center items-center rounded-full py-1.5 cursor-pointer bg-gray-200 transform duration-300 hover:scale-103 hover:bg-gray-100">
               <img src="/github.svg" className="h-7" />
             </div>
           </div>
         </form>
+        <div className="w-full">
+          <Link href="/">
+            <p className="cursor-pointer w-min font-extrabold text-gray-200 flex flex-row hover:text-green-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              BACK
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
