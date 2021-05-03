@@ -9,12 +9,14 @@ const Layout = ({ children }) => {
       {/* Aligned to the top */}
       <div className="flex-1">
         {router.pathname !== "/Sign-in" &&
-          router.pathname !== "/Forgot-password" && <Header />}
+          router.pathname !== "/Forgot-password" &&
+          router.pathname !== "/Sign-up" && <Header />}
         <div>{children}</div>
       </div>
       {/* Aligned to the bottom */}
       {router.pathname !== "/Sign-in" &&
-        router.pathname !== "/Forgot-password" && <Footer />}
+        router.pathname !== "/Forgot-password" &&
+        router.pathname !== "/Sign-up" && <Footer />}
     </div>
   );
 };
