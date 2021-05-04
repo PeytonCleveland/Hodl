@@ -9,21 +9,21 @@ const Layout = ({ children }) => {
     <div className="flex flex-col justify-between w-screen min-h-screen">
       {/* Aligned to the top */}
       <div className="flex-1 w-screen">
-        {router.pathname !== "/Sign-in" &&
-          router.pathname !== "/Forgot-password" &&
-          router.pathname !== "/Sign-up" &&
-          !router.pathname.includes("App") && <Header />}
+        {router.pathname !== "/sign-in" &&
+          router.pathname !== "/forgot-password" &&
+          router.pathname !== "/sign-up" &&
+          !router.pathname.includes("app") && <Header />}
 
         <div className="flex flex-row w-full">
-          {router.pathname.includes("App") && <Nav />}
+          {router.pathname.includes("app") && <Nav />}
           {children}
         </div>
       </div>
       {/* Aligned to the bottom */}
-      {router.pathname !== "/Sign-in" &&
-        router.pathname !== "/Forgot-password" &&
-        router.pathname !== "/Sign-up" &&
-        router.pathname !== "/App/Dashboard" && <Footer />}
+      {router.pathname !== "/sign-in" &&
+        router.pathname !== "/forgot-password" &&
+        router.pathname !== "/sign-up" &&
+        !router.pathname.includes("app") && <Footer />}
     </div>
   );
 };

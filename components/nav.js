@@ -95,7 +95,7 @@ const Nav = () => {
         </div>
         <div
           className={
-            router.pathname === "/App/Dashboard"
+            router.pathname === "/app/dashboard"
               ? open
                 ? activeStyleFull
                 : activeStyleCompact
@@ -129,7 +129,7 @@ const Nav = () => {
         </div>
         <div
           className={
-            router.pathname === "/App/Explore"
+            router.pathname === "/app/explore"
               ? open
                 ? activeStyleFull
                 : activeStyleCompact

@@ -20,7 +20,7 @@ const SignUp = () => {
           </h2>
           <p class="mt-2 text-center text-gray-400 text-sm">
             Or{" "}
-            <Link href="/Sign-in">
+            <Link href="/sign-in">
               <span className="text-green-400 hover:text-green-500 font-medium cursor-pointer">
                 sign in to your account
               </span>

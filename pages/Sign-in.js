@@ -20,7 +20,7 @@ const SignIn = () => {
           </h2>
           <p class="mt-2 text-center text-gray-400 text-sm">
             Or{" "}
-            <Link href="/Sign-up">
+            <Link href="/sign-up">
               <span className="text-green-400 hover:text-green-500 font-medium cursor-pointer">
                 create your account
               </span>
@@ -80,7 +80,7 @@ const SignIn = () => {
             </div>
 
             <div class="text-sm">
-              <Link href="/Forgot-password">
+              <Link href="/forgot-password">
                 <p className="hover:text-green-400 text-primary font-medium cursor-pointer">
                   Forgot your password?
                 </p>

@@ -54,7 +54,7 @@ const Forgot = () => {
           </div>
         </form>
         <div className="w-full">
-          <Link href="/Sign-in">
+          <Link href="/sign-in">
             <p className="flex flex-row w-min text-gray-200 hover:text-green-400 font-extrabold cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

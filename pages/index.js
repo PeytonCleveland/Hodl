@@ -41,7 +41,7 @@ const Home = () => {
             Join and explore the crypto community, share and promote your stake
             pool
           </h3>
-          <Link href="/Sign-up">
+          <Link href="/sign-up">
             <button className="flex flex-row items-center px-8 py-4 text-xl font-extrabold bg-gradient-to-br shadow-xl from-green-400 hover:from-green-500 to-green-500 hover:to-green-500 transform hover:scale-103 duration-300">
               CREATE STAKE POOL
             </button>
@@ -170,7 +170,7 @@ const Home = () => {
               <div className="absolute z-30 left-5 top-36 text-gray-100 text-3xl font-extrabold uppercase">
                 We do the work, <br /> You get the rewards.
               </div>
-              <Link href="/Sign-up">
+              <Link href="/sign-up">
                 <button className="absolute z-30 bottom-8 right-8 px-6 py-2 text-lg font-extrabold bg-gradient-to-br from-green-400 hover:from-green-500 to-green-500 hover:to-green-500 transform hover:scale-105 duration-300">
                   START NOW
                 </button>
