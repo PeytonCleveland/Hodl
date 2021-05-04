@@ -19,6 +19,8 @@
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.13",
+    "prettier": "^2.2.1",
+    "prettier-plugin-tailwind": "^2.2.10",
     "tailwindcss": "^2.1.2"
   }
 }
