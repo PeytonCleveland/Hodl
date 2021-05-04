@@ -8,13 +8,13 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col justify-between w-screen min-h-screen">
       {/* Aligned to the top */}
-      <div className="flex-1">
+      <div className="flex-1 w-screen">
         {router.pathname !== "/Sign-in" &&
           router.pathname !== "/Forgot-password" &&
           router.pathname !== "/Sign-up" &&
           !router.pathname.includes("App") && <Header />}
 
-        <div className="flex flex-row">
+        <div className="flex flex-row w-full">
           {router.pathname.includes("App") && <Nav />}
           {children}
         </div>

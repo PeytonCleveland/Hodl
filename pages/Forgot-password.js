@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Forgot = () => {
   return (
-    <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary py-12 px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center px-4 py-12 w-screen min-h-screen bg-gradient-to-br from-primary to-secondary sm:px-6 lg:px-8">
       <div
         style={{
           backgroundImage: `url("grid.png")`,
@@ -13,14 +13,14 @@ const Forgot = () => {
           zIndex: `1`,
         }}
       ></div>
-      <div class="max-w-md w-full flex flex-col items-center space-y-8 z-30">
+      <div class="z-30 flex flex-col items-center w-full max-w-md space-y-8">
         <div>
-          <h2 class="text-center text-2xl md:text-4xl font-extrabold text-gray-200">
+          <h2 class="text-center text-gray-200 text-2xl font-extrabold md:text-4xl">
             Reset Password
           </h2>
         </div>
         <form
-          className="mt-8 w-full space-y-6 bg-gradient-to-br from-gray-800 to-gray-900 px-5 md:px-12 py-10 pt-7 shadow-lg z-30"
+          className="z-30 mt-8 pt-7 px-5 py-10 w-full bg-gradient-to-br shadow-lg from-gray-800 to-gray-900 space-y-6 md:px-12"
           action="#"
           method="POST"
         >
@@ -28,7 +28,7 @@ const Forgot = () => {
             <div>
               <label
                 for="email-address"
-                className="text-sm text-gray-200 font-bold"
+                className="text-gray-200 text-sm font-bold"
               >
                 Email address
               </label>
@@ -38,7 +38,7 @@ const Forgot = () => {
                 type="email"
                 autocomplete="email"
                 required
-                className="appearance-none relative block w-full mt-1 px-3 py-2 bg-gray-200 placeholder-gray-400 text-gray-900 focus:outline-none focus:z-10 sm:text-sm mb-4"
+                className="placeholder-gray-400 relative focus:z-10 block mb-4 mt-1 px-3 py-2 w-full text-gray-900 bg-gray-200 focus:outline-none appearance-none sm:text-sm"
                 placeholder="Example@email.com"
               />
             </div>
@@ -47,7 +47,7 @@ const Forgot = () => {
           <div>
             <button
               type="submit"
-              class="group relative w-full flex justify-center py-2 px-4 border border-transparent transform duration-300 hover:scale-103 text-lg font-extrabold text-gray-900 bg-gradient-to-br from-green-400 to-green-500 hover:from-green-500 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="group relative flex justify-center px-4 py-2 w-full text-gray-900 text-lg font-extrabold bg-gradient-to-br border border-transparent focus:outline-none from-green-400 hover:from-green-500 to-green-500 hover:to-green-500 transform hover:scale-103 duration-300 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-2"
             >
               Request Reset
             </button>
@@ -55,10 +55,10 @@ const Forgot = () => {
         </form>
         <div className="w-full">
           <Link href="/Sign-in">
-            <p className="cursor-pointer w-min font-extrabold text-gray-200 flex flex-row hover:text-green-400">
+            <p className="flex flex-row w-min text-gray-200 hover:text-green-400 font-extrabold cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

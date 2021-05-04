@@ -1,7 +1,7 @@
 import Link from "next/link";
 const SignIn = () => {
   return (
-    <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-secondary py-12 px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center px-4 py-12 w-screen min-h-screen bg-gradient-to-br from-primary to-secondary sm:px-6 lg:px-8">
       <div
         style={{
           backgroundImage: `url("grid.png")`,
@@ -13,22 +13,22 @@ const SignIn = () => {
           zIndex: `1`,
         }}
       ></div>
-      <div class="max-w-md flex flex-col items-center w-full space-y-8 z-30">
+      <div class="z-30 flex flex-col items-center w-full max-w-md space-y-8">
         <div>
-          <h2 class="text-center text-2xl md:text-4xl font-extrabold text-gray-200">
+          <h2 class="text-center text-gray-200 text-2xl font-extrabold md:text-4xl">
             Sign in to your account
           </h2>
-          <p class="mt-2 text-center text-sm text-gray-400">
+          <p class="mt-2 text-center text-gray-400 text-sm">
             Or{" "}
             <Link href="/Sign-up">
-              <span className="font-medium text-green-400 hover:text-green-500 cursor-pointer">
+              <span className="text-green-400 hover:text-green-500 font-medium cursor-pointer">
                 create your account
               </span>
             </Link>
           </p>
         </div>
         <form
-          className="mt-8 space-y-6 bg-gradient-to-br w-full from-gray-800 to-gray-900 px-5 md:px-10 py-10 shadow-lg z-30"
+          className="z-30 mt-8 px-5 py-10 w-full bg-gradient-to-br shadow-lg from-gray-800 to-gray-900 space-y-6 md:px-10"
           action="#"
           method="POST"
         >
@@ -36,7 +36,7 @@ const SignIn = () => {
             <div>
               <label
                 for="email-address"
-                className="text-sm text-gray-200 font-bold"
+                className="text-gray-200 text-sm font-bold"
               >
                 Email address
               </label>
@@ -46,12 +46,12 @@ const SignIn = () => {
                 type="email"
                 autocomplete="email"
                 required
-                className="appearance-none relative block w-full mt-1 px-3 py-2 bg-gray-200 placeholder-gray-400 text-gray-900 focus:outline-none focus:z-10 sm:text-sm mb-4"
+                className="placeholder-gray-400 relative focus:z-10 block mb-4 mt-1 px-3 py-2 w-full text-gray-900 bg-gray-200 focus:outline-none appearance-none sm:text-sm"
                 placeholder="Example@email.com"
               />
             </div>
             <div>
-              <label for="password" className="text-sm text-gray-200 font-bold">
+              <label for="password" className="text-gray-200 text-sm font-bold">
                 Password
               </label>
               <input
@@ -60,7 +60,7 @@ const SignIn = () => {
                 type="password"
                 autocomplete="current-password"
                 required
-                className="appearance-none  relative block w-full mt-1 px-3 py-2 bg-gray-200 placeholder-gray-400 text-gray-900 focus:outline-none focus:z-10 sm:text-sm mb-4"
+                className="placeholder-gray-400 relative focus:z-10 block mb-4 mt-1 px-3 py-2 w-full text-gray-900 bg-gray-200 focus:outline-none appearance-none sm:text-sm"
                 placeholder="Password"
               />
             </div>
@@ -72,16 +72,16 @@ const SignIn = () => {
                 id="remember_me"
                 name="remember_me"
                 type="checkbox"
-                className="h-4 w-4 text-green-400 form-checkbox focus:ring-indigo-500 border-gray-300"
+                className="form-checkbox w-4 h-4 text-green-400 border-gray-300 focus:ring-indigo-500"
               />
-              <label for="remember_me" class="ml-2 block text-sm text-gray-300">
+              <label for="remember_me" class="block ml-2 text-gray-300 text-sm">
                 Remember me
               </label>
             </div>
 
             <div class="text-sm">
               <Link href="/Forgot-password">
-                <p className="font-medium text-primary hover:text-green-400 cursor-pointer">
+                <p className="hover:text-green-400 text-primary font-medium cursor-pointer">
                   Forgot your password?
                 </p>
               </Link>
@@ -91,33 +91,33 @@ const SignIn = () => {
           <div>
             <button
               type="submit"
-              class="group relative w-full flex justify-center py-2 px-4 border border-transparent transform duration-300 hover:scale-103 text-lg font-extrabold text-gray-900 bg-gradient-to-br from-green-400 to-green-500 hover:from-green-500 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="group relative flex justify-center px-4 py-2 w-full text-gray-900 text-lg font-extrabold bg-gradient-to-br border border-transparent focus:outline-none from-green-400 hover:from-green-500 to-green-500 hover:to-green-500 transform hover:scale-103 duration-300 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-2"
             >
               Sign in
             </button>
           </div>
-          <div className="flex flex-row w-full justify-center items-center">
-            <hr className="w-20 md:w-24 border-gray-500" />
-            <p className="text-gray-400 text-sm text-center mx-3">
+          <div className="flex flex-row items-center justify-center w-full">
+            <hr className="w-20 border-gray-500 md:w-24" />
+            <p className="mx-3 text-center text-gray-400 text-sm">
               Or continue with
             </p>
-            <hr className="w-20 md:w-24 border-gray-500" />
+            <hr className="w-20 border-gray-500 md:w-24" />
           </div>
-          <div className="grid grid-cols-2 gap-8 w-full">
-            <div className="flex justify-center items-center rounded-full py-1.5 cursor-pointer bg-gray-200 transform duration-300 hover:scale-103 hover:bg-gray-100">
+          <div className="grid gap-8 grid-cols-2 w-full">
+            <div className="flex items-center justify-center py-1.5 hover:bg-gray-100 bg-gray-200 rounded-full cursor-pointer transform hover:scale-103 duration-300">
               <img src="/google.svg" className="h-6" />
             </div>
-            <div className="flex justify-center items-center rounded-full py-1.5 cursor-pointer bg-gray-200 transform duration-300 hover:scale-103 hover:bg-gray-100">
+            <div className="flex items-center justify-center py-1.5 hover:bg-gray-100 bg-gray-200 rounded-full cursor-pointer transform hover:scale-103 duration-300">
               <img src="/github.svg" className="h-7" />
             </div>
           </div>
         </form>
         <div className="w-full">
           <Link href="/">
-            <p className="cursor-pointer w-min font-extrabold text-gray-200 flex flex-row hover:text-green-400">
+            <p className="flex flex-row w-min text-gray-200 hover:text-green-400 font-extrabold cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
